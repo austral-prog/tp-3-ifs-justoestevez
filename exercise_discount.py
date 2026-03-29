@@ -31,18 +31,18 @@ def discount():
     descuento = 0
 
     if cantidad >= 10: 
-        descuento = 20
+        descuento = 0.20
 
-    elif cantidad >= 5:
-        descuento = 10
+    elif 5<= cantidad <=9 :
+        descuento = 0.10
 
     else:
         descuento = 0
 
-    monto_descuento = subtotal * (descuento / 100)
+    monto_descuento = subtotal * descuento 
     total_final = subtotal - monto_descuento
 
     print (f"Subtotal: {subtotal}")
-    print (f"Descuento aplicado: {descuento}%")
+    print (f"Descuento aplicado: {int (descuento * 100)}%")
     print (f"Monto de descuento: {monto_descuento}")
     print (f"Total final: {total_final}")
