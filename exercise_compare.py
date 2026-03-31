@@ -22,5 +22,5 @@ def compare():
     elif numero < numero2:
         print (f"{numero} es menor que {numero2}")
     elif numero == numero2:
-        print (f"{numero} es igual que {numero2}")
+        print (f"{numero} es igual a {numero2}")
 
